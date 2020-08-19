@@ -1,0 +1,14 @@
+<a href="/">Home</a>
+<a href="/most_recent_view/">most_recent_view</a>
+
+<h1>Hello, Welcome to Cowsay!</h1>
+
+<div>
+    <pre>{{ cow_response }}</pre>
+</div>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit!">
+</form>
